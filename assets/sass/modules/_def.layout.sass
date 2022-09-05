@@ -1,0 +1,163 @@
+// Main wrapper
+#wrap
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  box-sizing: border-box
+
+
+// Combined styles
+header,
+footer
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-grow: 0
+  flex-shrink: 0
+  align-items: center
+
+// Header style
+header
+  #brand
+    a
+      display: block
+
+      ul
+        display: inline-flex
+        align-items: center
+
+        .logo
+          margin-right: 10px
+
+          span
+            display: inline-block
+            width: 48px
+
+            svg
+              width: 100%
+
+        .name
+          font-size: 2.2rem
+          color: $color-tpl-brand
+
+  nav
+    .menu
+      display: flex
+      flex-wrap: wrap
+      margin: 0
+      padding: 0
+      position: relative
+
+      .menu-link
+        +rfs($font-size-nnm)
+        +margin-right(3rem)
+        padding: 0
+        position: relative
+        color: $color-black
+        transition: color .4s
+
+        &:focus,
+        &:hover
+          color: $color-tpl-main
+
+          &::before
+            transform: scale3d(1, 1, 1)
+            transition-delay: 0s
+
+        &::before,
+        &::after
+          bottom: -6px
+          content: ' '
+          height: 3px
+          left: 0
+          position: absolute
+          transform: scale3d(0, 1, 1)
+          transform-origin: center left
+          transition: transform .4s cubic-bezier(.22, .61, .36, 1)
+          width: 100%
+
+        &::before
+          background: $color-tpl-main
+          transition-delay: .4s
+
+        &::after
+          background: $color-tpl-main
+
+      .nuxt-link-active
+        .menu-link
+          color: $color-tpl-main
+          font-weight: 600
+
+          &:hover,
+          &:focus
+            color: $color-tpl-main
+
+          &::after,
+          &::before
+            transform: scale3d(1, 1, 1)
+
+          &::before
+            transform-delay: 0s
+
+  #quote
+    a
+      border-color: $color-tpl-main
+
+
+// Main content general style
+#main
+  display: flex
+  margin-top: 4vh
+  flex-grow: 1
+
+// Footer style
+footer
+  flex-wrap: wrap
+  vertical-align: middle
+
+  border-top: 1px solid $color-tpl-main
+
+  ul
+    display: inline-flex
+    align-items: center
+
+  #copy
+    ul
+      li:first-of-type
+        font-size: $font-size-nnm
+        font-weight: 600
+        margin-right: 10px
+
+      li:last-of-type
+        color: gray(50)
+        font-size: $font-size-sm
+
+  #nav-links
+    margin-left: 20px
+    margin-right: auto
+
+    ul
+      li
+        margin-right: 10px
+        font-size: $font-size-nm
+
+        &:nth-of-type(-n+2)
+          &::after
+            content: '/'
+            margin-left: 10px
+            color: gray(50)
+
+        a
+          color: $color-tpl-main
+
+          &:hover
+            color: $color-tpl-brand
+
+  #social-links
+    ul
+      li
+        margin: 6px
+
+        a
+          display: inline-block
+          width: 32px

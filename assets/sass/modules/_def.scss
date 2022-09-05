@@ -1,0 +1,31 @@
+html,
+body {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $browser-font-size;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-tpl-bg;
+  color: $color-black;
+  font-family: $font-name;
+  font-size: $default-font-size;
+  line-height: $line-height;
+  text-rendering: optimizelegibility;
+
+  a {
+    transition: 1s;
+
+    &:hover {
+      transition: 1s;
+    }
+  }
+}

@@ -7,10 +7,10 @@
 
 <script>
 export default {
-    name: "IndexPage",
+    name: "SolutionsPage",
     head() {
         return {
-            title: "Airpresstech: Home"
+            title: "Airpresstech: Solutions"
         }
     }
 }
