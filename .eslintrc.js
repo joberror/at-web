@@ -12,10 +12,14 @@ module.exports = {
   plugins: [],
   // add your custom rules here
   rules: {
-    "vue/multi-word-component-names": [
-      "error", {
-        "ignores": ['solutions', 'about', 'contact']
-      }
-    ]
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['solutions', 'about', 'contact'],
+      },
+    ],
   },
-};
+  globals: {
+    google: 'readonly',
+  },
+}

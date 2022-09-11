@@ -1,0 +1,140 @@
+@import 'modules/plugins';
+
+#main {
+  padding-top: 6vh;
+
+  section {
+    display: flex;
+
+    h4,
+    h3,
+    h2 {
+      font-weight: bold;
+    }
+
+    &#intro {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        font-size: 2.4rem;
+        color: $color-tpl-main;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: $font-size-nnm;
+      }
+
+      span {
+        display: inline-block;
+        width: 92px;
+        padding: 20px 30px;
+        border-radius: 8px;
+        background: linear-gradient(115.11deg, rgba(20, 188,211, 0.6) 17.14%, rgba(20, 188, 211, 0) 79.31%);
+
+        svg {
+          width: 100%;
+        }
+      }
+    }
+
+    &#pro {
+      margin-top: 4vh;
+      flex-direction: column;
+
+      div {
+        margin-bottom: 50px;
+
+        &:last-of-type {
+          padding: 40px 60px;
+          background: rgba($color-tpl-main, 30%);
+        }
+
+        h3 {
+          font-size: 2.1rem;
+        }
+
+        p {
+          font-size: $font-size-nnm;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          span {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            padding: 12px;
+            border-radius: 10px;
+            background: hsl(0, 0%, 98%);
+            @include mat-card-shadow(1);
+
+            svg {
+              width: 100%;
+            }
+          }
+
+          > li {
+              ul {
+                display: flex;
+                flex-direction: column;
+                padding-left: 30px;
+                border-left: 1px solid $color-tpl-main;
+
+                li {
+                  display: block;
+                  margin-bottom: 10px;
+
+                  &:nth-of-type(2n) {
+                    color: $color-tpl-brand;
+                    font-size: $font-size-nnm;
+                    font-weight: 600;
+                  }
+                }
+              }
+          }
+        }
+      }
+    }
+
+    &#corp {
+      margin: 30px 0;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @include mat-card-shadow(1);
+          background-color: hsl(0, 0%, 98%);
+          border-radius: 10px;
+          display: flex;
+          width: 320px;
+          padding: 40px 20px;
+
+          h4 {
+            font-size: 2.1rem;
+          }
+
+          p {
+            border-top: 1px solid gray(75);
+            margin-top: 20px;
+            padding-top: 20px;
+            text-align: center;
+          }
+
+        }
+      }
+    }
+  }
+}

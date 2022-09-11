@@ -1,4 +1,10 @@
+if (process.env.NODE_ENV !== "production") require("dotenv").config();
+
 export default {
+  // Env settings
+  env: {
+    gMap: process.env.GOOGLE_MAPS_API_KEY
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     meta: [

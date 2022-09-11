@@ -1,0 +1,73 @@
+@import 'modules/plugins';
+
+#main {
+  padding-top: 6vh;
+
+  h2 {
+    font-size: 2.0rem;
+
+    span {
+      font-weight: 600;
+      color: $color-tpl-main;
+    }
+  }
+
+  section {
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-direction: row;
+
+      > div {
+        flex-direction: column;
+
+        &:first-of-type {
+          margin-right: 5vw;
+        }
+
+        &.card {
+          padding: 20px 30px;
+          background-color: $color-tpl-card;
+          border-radius: 12px;
+          @include mat-card-shadow(1);
+
+          &.hq {
+            background-color: rgba($color-tpl-main, 20%);
+          }
+
+        }
+      }
+
+      h3 {
+        font-size: $font-size-nnm;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: gray(30);
+      }
+
+      ul {
+        border-left: 4px solid $color-tpl-main;
+        padding-left: 6px;
+
+        li {
+          margin: 6px;
+        }
+      }
+
+      a {
+        color: $color-tpl-main;
+      }
+    }
+  }
+}
+
+#myMap {
+  margin-top: 50px;
+  display: flex;
+  height: 700px;
+  border-top: 1px solid $color-tpl-main;
+}
