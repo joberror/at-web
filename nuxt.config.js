@@ -1,6 +1,8 @@
 if (process.env.NODE_ENV !== "production") require("dotenv").config();
 
 export default {
+  // Static hosting
+  target: 'static',
   // Env settings
   env: {
     gMap: process.env.GOOGLE_MAPS_API_KEY
