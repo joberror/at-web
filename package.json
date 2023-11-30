@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@nuxtjs/svg": "^0.4.0",
-    "@vue/language-plugin-pug": "^1.8.22",
+    "@vue/language-plugin-pug": "^1.8.24",
     "dotenv": "^16.0.2",
     "family.scss": "^1.0.8",
     "kf-sass": "^1.0.1",
