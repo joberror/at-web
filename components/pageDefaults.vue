@@ -1,6 +1,6 @@
 <template lang="pug">
 
-  header(v-if="type === 'header'", class='cl-wrap pad-top')
+  header(v-if="type === 'header'", class='pad-top cl-wrap')
     #brand
       a(href='/', title='Homepage')
         ul
@@ -16,7 +16,7 @@
       a(href='https://bit.ly/WAairpresstech', title='Chat with our representative for a Quote').btn-def Get Quote
 
 
-  footer(v-else-if="type === 'footer'", class="cl-wrap pad-top")
+  footer(v-else-if="type === 'footer'", class="pad-top cl-wrap")
     #copy
       ul
         li airpresstech
@@ -31,7 +31,7 @@
     #social-links
       ul
         li(v-for='(link, i) in socialLink')
-          a(:href='link.href', :title='link.title')
+          a(:href='link.href', :title='link.title', :class='link.class')
             span(v-html='link.svg')
 
   div(v-else)
@@ -40,6 +40,8 @@
 import brandLogo from "~/assets/svg/logo.svg?raw";
 import TwitterLogo from "~/assets/svg/twitter.svg?raw";
 import FacebookLogo from "~/assets/svg/facebook.svg?raw";
+import LinkedInLogo from "~/assets/svg/linkedin.svg?raw";
+
 export default {
   props: {
     type: {
@@ -60,14 +62,22 @@ export default {
       ],
       socialLink: [
         {
+          svg: LinkedInLogo,
+          href: 'https://www.linkedin.com/company/airpress-technical-allied-services',
+          title: 'Interact with us on LinkedIn',
+          class: 'social-linkedIn'
+        },
+        {
           svg: TwitterLogo,
           href: 'https://twitter.com/AirpressL',
-          title: 'Interact with us on Twitter'
+          title: 'Interact with us on Twitter',
+          class: 'social-twitter'
         },
         {
           svg: FacebookLogo,
           href: 'https://facebook.com/AirpressTech',
-          title: 'Interact with us on Facebook'
+          title: 'Interact with us on Facebook',
+          class: 'social-facebook'
         }
       ],
       navLink: [

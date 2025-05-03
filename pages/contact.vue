@@ -22,10 +22,10 @@
             div
                 div.card
                     h3 Head Office:
-                    p 62, Iyana-Ipaja Road, #[br] Alaguntan B/Stop #[br] Opp. Mobil Filling Station, #[br] Iyana-Ipaja, Alimosho #[br] Lagos, Nigeria.
+                    p 24B, Akowonjo Road, #[br] Egbeda 100275, #[br] Lagos, Nigeria.
                 div.card.hq
                     h3 P/Harcourt Office:
-                    p HC, 54 Road 3, Enugu Str., #[br] Rumuobiokani HE #[br] Old Aba Road, P/H #[br] River, Nigeria.
+                    p HC, 54 Road 3, Enugu Str., #[br] Rumuobiokani HE #[br] Old Aba Road, P/H #[br] Rivers, Nigeria.
 
     #myMap
         //- iframe(src='https://my.atlistmaps.com/map/50519f76-328e-4208-b8fd-bbeba9e013c4?share=true', allow='geolocation', width='100%', height='700px', frameborder='0', scrolling='no' allowfullscreen)
@@ -101,7 +101,7 @@ export default {
         stylers: [{ color: '#7dcdcd' }],
       },
     ]
-    const headOffLoc = { lat: 6.614721, lng: 3.298106 }
+    const headOffLoc = { lat: 6.5993128, lng: 3.2907324 }
     const phOffLoc = { lat: 4.838607, lng: 7.03344 }
     const myLongLat = new google.maps.LatLng(5.614721, 4.298106)
 
@@ -175,15 +175,11 @@ export default {
         '<b>Head Office (Lagos)</b>' +
         '<br/>' +
         '<br/>' +
-        '62, Iyana-Ipaja Road' +
+        '24B, Akowonjo Road' +
         '<br/>' +
-        'Alaguntan B/Stop' +
+        'Egbeda, 100275' +
         '<br/>' +
-        'Opp. Mobil Filling Station' +
-        '<br/>' +
-        'Iyana-Ipaja, Alimosho' +
-        '<br/>' +
-        'Lagos State',
+        'Lagos State, Nigeria',
     })
     addMArker({
       coords: phOffLoc,
