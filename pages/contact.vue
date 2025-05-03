@@ -101,12 +101,12 @@ export default {
         stylers: [{ color: '#7dcdcd' }],
       },
     ]
-    const headOffLoc = { lat: 6.5993128, lng: 3.2907324 }
+    const headOffLoc = { lat: 6.59948, lng: 3.29303 }
     const phOffLoc = { lat: 4.838607, lng: 7.03344 }
     const myLongLat = new google.maps.LatLng(5.614721, 4.298106)
 
     const myOptions = {
-      zoom: 8,
+      zoom: 12,
       center: myLongLat,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       styles: lightGMap,
