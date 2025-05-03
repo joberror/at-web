@@ -101,12 +101,12 @@ export default {
         stylers: [{ color: '#7dcdcd' }],
       },
     ]
-    const headOffLoc = { lat: 6.59948, lng: 3.29303 }
+    const headOffLoc = { lat: 6.59948, lng: 3.29284 }
     const phOffLoc = { lat: 4.838607, lng: 7.03344 }
     const myLongLat = new google.maps.LatLng(5.614721, 4.298106)
 
     const myOptions = {
-      zoom: 12,
+      zoom: 8,
       center: myLongLat,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       styles: lightGMap,
@@ -150,7 +150,7 @@ export default {
 
       mapMarker.addListener('click', function () {
         mapInfoWindow.open(map, mapMarker)
-        map.setZoom(11)
+        map.setZoom(14)
         map.setCenter(mapMarker.getPosition())
         toggleBounce()
       })
