@@ -9,11 +9,11 @@
             div.brands
                 h2 Specialized Brands
                 ul
-                    li #[span #[img(src='~assets/img/atlas-copco.png', alt='Atlas Copco logo')]] Atlas Copco
-                    li #[span #[img(src='~assets/img/ingersoll.png', alt='Ingersoll logo')]] Ingersoll Rand
-                    li #[span #[img(src='~assets/img/sullair.png', alt='Sullair logo')]] Sullair
-                    li #[span #[img(src='~assets/img/elgi.png', alt='Elgi logo')]] Elgi
-                    li #[span #[img(src='~assets/img/compair.png', alt='CompAir logo')]] CompAir
+                    li Atlas Copco
+                    li Ingersoll Rand
+                    li Sullair
+                    li Elgi
+                    li CompAir
 
             div.products
                 h2 Products
